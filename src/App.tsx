@@ -1,8 +1,14 @@
 import "./App.css";
-import Game from "./components/Game";
+import Counter from "./components/Counter";
+import PostList from "./components/PostList";
 
 function App() {
-  return <Game />;
+  return (
+    <div>
+      <Counter />
+      <PostList />
+    </div>
+  );
 }
 
 export default App;

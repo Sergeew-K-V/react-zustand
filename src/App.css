@@ -4,3 +4,87 @@
   padding: 2rem;
   text-align: center;
 }
+
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.post-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  margin: 0 0 10px 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.post-body {
+  margin: 0;
+  font-size: 1em;
+  color: #666;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.counter-container h1 {
+  margin: 0;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.counter-button {
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.counter-button:hover {
+  background-color: #0056b3;
+}
+
+.counter-button.decrement {
+  background-color: #dc3545;
+}
+
+.counter-button.decrement:hover {
+  background-color: #a71d2a;
+}
+
+.counter-button.increment {
+  background-color: #28a745;
+}
+
+.counter-button.increment:hover {
+  background-color: #1e7e34;
+}
