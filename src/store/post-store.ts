@@ -29,10 +29,7 @@ const usePostStore = create<IPostStore & IPostStoreAction>((set) => ({
 }));
 
 usePostStore.setState((state) => {
-  console.log("~~~~ ~ usePostStore.setState ~ set~~~~:", state);
-
   state.fetchPosts();
-  console.log("1");
 
   return state;
 });

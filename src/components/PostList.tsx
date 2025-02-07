@@ -2,13 +2,7 @@
 import usePostStore from "../store/post-store";
 
 const PostList = () => {
-  console.log("2");
   const posts = usePostStore((state) => state.posts);
-  // const fetchPosts = usePostStore((state) => state.fetchPosts);
-
-  // useEffect(() => {
-  //   fetchPosts();
-  // }, []);
 
   if (!posts.length) {
     return <div className="post-list">No posts</div>;
